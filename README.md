@@ -1,4 +1,4 @@
-requestWithCookies
+request-with-cookies
 ==================
 
 An enhancement to mikeal/request library to create reusuable clients that supports cookies per client
@@ -9,11 +9,11 @@ An enhancement to mikeal/request library to create reusuable clients that suppor
 Create a new client and use the same API as [mikeal/request](https://github.com/mikeal/request/)
 
 ```javascript
-var request = require("requestWithCookies");
+var request = require("request-with-cookies");
 var client = request.createClient();
-client('http://www.google.com', function (error, response, body) {
+client("http://www.google.com", function (error, response, body) {
   if (!error && response.statusCode == 200) {
-    console.log(body) // Print the google web page.
+    console.log(body) // Prints the google web page.
   }
 });
 ```

@@ -1,4 +1,6 @@
 npm-debug.log
-node_modules
 src
 test
+.git
+.DS_Store
+gulpfile.js

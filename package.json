@@ -1,5 +1,5 @@
 {
-  "name": "requestWithCookies",
+  "name": "request-with-cookies",
   "version": "0.0.1",
   "description": "An enhancement to mikeal/request library to create reusuable clients that supports cookies per client",
   "main": "lib/index.js",
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sharathprabhal/requestWithCookies"
+    "url": "https://github.com/sharathprabhal/request-with-cookies"
   },
   "author": "Sharath Prabhal <sharathbose@gmail.com>",
   "license": "MIT"
