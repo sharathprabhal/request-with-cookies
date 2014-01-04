@@ -4,7 +4,7 @@
   "description": "An enhancement to mikeal/request library to create reusuable clients that supports cookies per client",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --reporter spec --compilers coffee:coffee-script --colors"
+    "test": "./node_modules/gulp/bin/gulp.js coffee; ./node_modules/mocha/bin/mocha --reporter spec --compilers coffee:coffee-script --colors"
   },
   "keywords": [
     "request",
