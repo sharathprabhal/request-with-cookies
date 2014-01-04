@@ -1,5 +1,5 @@
 request-with-cookies
-==================
+====================
 
 An enhancement to mikeal/request library to create reusuable clients that supports cookies per client
 
@@ -27,6 +27,7 @@ module.exports.createClient = () -> request.defaults({jar: request.jar()})
 ```
 
 ## Build and Test
+
 The code can be built using [gulp](http://gulpjs.com/) as follows
 
 ```
