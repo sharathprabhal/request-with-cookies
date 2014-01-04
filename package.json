@@ -1,0 +1,35 @@
+{
+  "name": "requestWithCookies",
+  "version": "0.0.1",
+  "description": "An enhancement to mikeal/request library to create reusuable clients that supports cookies per client",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --reporter spec --compilers coffee:coffee-script --colors"
+  },
+  "keywords": [
+    "request",
+    "cookies",
+    "client",
+    "httpclient"
+  ],
+  "dependencies": {
+    "request": "2.27.0"
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.3",
+    "gulp": "3.2.2",
+    "gulp-util": "*",
+    "gulp-coffee": "1.2.4",
+    "gulp-coffeelint": "0.0.2",
+    "gulp-mocha": "0.2.0",
+    "mocha": "1.16.2",
+    "express": "3.x",
+    "should": "2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sharathprabhal/requestWithCookies"
+  },
+  "author": "Sharath Prabhal <sharathbose@gmail.com>",
+  "license": "MIT"
+}
