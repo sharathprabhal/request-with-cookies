@@ -3,6 +3,8 @@ request-with-cookies
 
 [![NPM](https://nodei.co/npm/request-with-cookies.png)](https://nodei.co/npm/request-with-cookies/)
 
+[![Build Status](https://travis-ci.org/sharathprabhal/request-with-cookies.png?branch=master)](https://travis-ci.org/sharathprabhal/request-with-cookies)
+
 An enhancement to mikeal/request library to create reusuable clients that supports cookies per client
 
 
