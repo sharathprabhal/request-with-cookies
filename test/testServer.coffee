@@ -17,4 +17,10 @@ app.get "/secure", (req, res) ->
   else
     res.send 403
 
+app.get "/checkDefaultQueryString", (req, res) ->
+  if (req.param("defaultKey"))
+    res.send 200, "qs present"
+  else
+    res.send 500
+
 module.exports = app

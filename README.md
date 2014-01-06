@@ -22,6 +22,24 @@ client("http://www.google.com", function (error, response, body) {
 });
 ```
 
+You can also create client with baked in options
+```javascript
+var request = require("request-with-cookies");
+var options = {
+  qs: {
+    q: "foo"
+  }
+};
+
+var client = request.createClient(options);
+// now every request will be send with "?q=foo" appended to the URL
+client("http://www.google.com", function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    console.log(body) // Prints the google web page.
+  }
+});
+```
+
 ## Implementation details
 
 `createClient()` is a one liner that uses `request.defaults` to create an instance of `request` with a new instance of cookie jar

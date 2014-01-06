@@ -1,4 +1,7 @@
 
 request = require "request"
 
-module.exports.createClient = () -> request.defaults({jar: request.jar()})
+module.exports.createClient = (options) ->
+  options ?= {}
+  options.jar ?= request.jar()
+  request.defaults(options)

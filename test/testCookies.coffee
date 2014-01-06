@@ -3,11 +3,20 @@ app = require "./testServer"
 should = require "should"
 assert = require "assert"
 
+server = {}
 port = 3001
-app.listen(port)
 url = "http://localhost:" + port
 
 describe "Cookies", () ->
+
+  before (done) ->
+    server = app.listen(port)
+    done()
+
+  after (done) ->
+    server.close()
+    done()
+
   it "should not be able to access secure", () ->
     client = request.createClient()
     client (url + "/secure"), (err, res, body) ->
