@@ -70,3 +70,14 @@ describe "Cookies", () ->
               throw err
             body.should.equal("user2")
             done()
+
+  it "should be able to set a cookie", (done) ->
+    client = request.createClient({
+      url: url,
+      cookies: [{name: 'foo', value: 'v'}, {name: 'bar', value: 'v'}]
+    })
+    client (url + '/checkCustomCookies'), (err, res, body) ->
+      if err
+        throw err
+      body.should.equal("cookie found")
+      done()

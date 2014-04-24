@@ -40,12 +40,21 @@ client("http://www.google.com", function (error, response, body) {
 });
 ```
 
-## Implementation details
-
-`createClient()` is a one liner that uses `request.defaults` to create an instance of `request` with a new instance of cookie jar
-
+Custom cookies can be set by passing in the following options
 ```javascript
-module.exports.createClient = () -> request.defaults({jar: request.jar()})
+var options = {
+  url: "https://foobar.com",
+  cookies: [
+  	{
+  	  name: "foo",
+  	  value: "v1"
+  	},
+  	{
+  	  name: "bar",
+  	  value: "v2"
+  	}
+  ]
+};
 ```
 
 ## Build and Test

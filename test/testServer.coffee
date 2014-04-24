@@ -23,4 +23,10 @@ app.get "/checkDefaultQueryString", (req, res) ->
   else
     res.send 500
 
+app.get "/checkCustomCookies", (req, res) ->
+  if req.cookies.foo and req.cookies.bar
+    res.send 200, "cookie found"
+  else
+    res.send 500
+
 module.exports = app

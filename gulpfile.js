@@ -29,7 +29,7 @@ gulp.task("test", function () {
 
 gulp.task("default", function () {
 	gulp.run("lint");
-  gulp.run("coffee");
+  	gulp.run("coffee");
 	gulp.run("coffee-test");
 
 	gulp.watch(["./src/**/*.coffee","./test/**/*.coffee"], function() {
