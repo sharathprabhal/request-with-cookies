@@ -36,7 +36,7 @@ describe "Options", () ->
         done()
 
   it "should be able to override cookies option", (done) ->
-    options = 
+    options =
       jar: false
 
     client = request.createClient(options)
