@@ -1,6 +1,6 @@
 {
   "name": "request-with-cookies",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An enhancement to mikeal/request library to create reusuable clients that supports cookies per client",
   "main": "lib/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "httpclient"
   ],
   "dependencies": {
-    "request": "2.27.0"
+    "request": "2.34.0"
   },
   "devDependencies": {
     "coffee-script": "1.6.3",
