@@ -13,7 +13,7 @@
     "httpclient"
   ],
   "dependencies": {
-    "request": "2.34.0",
+    "request": "2.54.0",
     "async": "0.7.0"
   },
   "devDependencies": {
@@ -24,7 +24,7 @@
     "gulp-coffeelint": "0.0.2",
     "gulp-mocha": "0.2.0",
     "mocha": "1.16.2",
-    "express": "3.x",
+    "express": "3.19",
     "should": "2.0.1"
   },
   "repository": {
